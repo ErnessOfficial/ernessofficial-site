@@ -195,13 +195,13 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
     },
     {
       id: 99,
-      title: 'Nuevo Cover – Título por definir',
+      title: 'Hopelessly Devoted to You - Reinvented Cover',
       artist: 'Erness',
-      originalArtist: '',
-      fileBase: 'placeholder-cover',
-      audioUrl: 'players/audios/placeholder-cover',
+      originalArtist: 'Olivia Newton-John',
+      fileBase: 'hopelesslydevoted',
+      audioUrl: 'players/audios/cover-track4',
       audioExt: 'wav',
-      subtitle: 'Cover by ERNESS – (Original por definir)',
+      subtitle: 'Cover by Erness - (Original by Olivia Newton-John)',
       cardLabel: 'Diamond Content – Web Exclusive',
       releaseDate: '',
       genre: 'Cover',
@@ -561,7 +561,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
         <p className="text-gray-500 text-sm mt-1">
           {track.subtitle || `${track.artist}${track.album ? ` • ${track.album}` : ''}`}
         </p>
-        <p className="text-gray-500 text-xs mt-1">Songwriter/ Producer : Ernesto Mendoza M</p>
+        <p className="text-gray-500 text-xs mt-1">{variant === 'covers' ? 'Produced by MerMusic Productions 2025' : 'Songwriter/ Producer : Ernesto Mendoza M'}</p>
         {variant === 'originals' ? (
           <div className="mt-3">
             <div className="flex flex-wrap gap-2 items-center">
@@ -1227,7 +1227,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
             </div>
             <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-6">
               {covers.map((track) => (
-                <AudioCard key={`covers-${track.id}`} audioId={`covers-${track.id}`} track={track} />
+                <AudioCard key={`covers-${track.id}`} audioId={`covers-${track.id}`} track={track} variant="covers" />
               ))}
             </div>
           </section>
