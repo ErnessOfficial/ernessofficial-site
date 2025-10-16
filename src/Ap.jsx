@@ -44,8 +44,8 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
     : name.endsWith('.svg') || name.endsWith('.png')
     ? [name]
     : [
-        `/icons/${name}.svg`,
-        `/icons/${name}.png`,
+        `icons/${name}.svg`,
+        `icons/${name}.png`,
       ];
   const [idx, setIdx] = useState(0);
   const src = candidates[idx];
@@ -102,7 +102,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
       artist: 'Erness',
       album: '',
       fileBase: 'hevistoaunimpostor',
-      audioUrl: '/players/audios/He_visto_a_un_impostor_2025',
+      audioUrl: 'players/audios/He_visto_a_un_impostor_2025',
       subtitle: 'Songwriter (letra y música): Ernesto Mendoza M.',
       cardLabel: 'Diamond Content – Web Exclusive',
       platforms: ['Originals by Erness', 'Spotify', 'Apple Music', 'YouTube Music'],
@@ -115,7 +115,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
       artist: 'Erness',
       album: '',
       fileBase: 'fotosenmipiel',
-      audioUrl: '/players/audios/Fotos_en_mi_piel_2025',
+      audioUrl: 'players/audios/Fotos_en_mi_piel_2025',
       subtitle: 'Songwriter (letra y música): Ernesto Mendoza M.',
       cardLabel: 'Diamond Content – Web Exclusive',
       platforms: ['Originals by Erness', 'Spotify', 'Apple Music', 'Amazon Music'],
@@ -128,7 +128,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
       artist: 'Erness',
       album: '',
       fileBase: 'loqueguardodeti',
-      audioUrl: '/players/audios/Lo_Que_Guardo_de_ti_2025',
+      audioUrl: 'players/audios/Lo_Que_Guardo_de_ti_2025',
       subtitle: 'Songwriter (letra y música): Ernesto Mendoza M.',
       cardLabel: 'Diamond Content – Web Exclusive',
       platforms: ['Originals by Erness', 'Spotify', 'YouTube Music', 'Tidal'],
@@ -141,7 +141,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
       artist: 'Erness',
       album: '',
       fileBase: 'placeholder-original',
-      audioUrl: '/players/audios/placeholder-original',
+      audioUrl: 'players/audios/placeholder-original',
       subtitle: 'Songwriter/ Producer : Ernesto Mendoza M',
       cardLabel: 'Diamond Content – Web Exclusive',
       platforms: ['Originals by Erness'],
@@ -160,7 +160,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
       artist: 'Erness',
       originalArtist: 'Christina Aguilera',
       fileBase: 'noesqueteextrane-coverimage',
-      audioUrl: '/players/audios/cover-track1',
+      audioUrl: 'players/audios/cover-track1',
       audioExt: 'wav',
       subtitle: 'Cover by ERNESS – (Original de Christina Aguilera)',
       cardLabel: 'Diamond Content – Web Exclusive',
@@ -173,7 +173,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
       artist: 'Erness',
       originalArtist: 'La Quinta Estación',
       fileBase: 'algomas-coverimage',
-      audioUrl: '/players/audios/cover-track2',
+      audioUrl: 'players/audios/cover-track2',
       audioExt: 'wav',
       subtitle: 'Cover by ERNESS – (Original de La Quinta Estación)',
       cardLabel: 'Diamond Content – Web Exclusive',
@@ -186,7 +186,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
       artist: 'Erness',
       originalArtist: 'Malú',
       fileBase: 'vuelvoaverte-coverimage',
-      audioUrl: '/players/audios/cover-track3',
+      audioUrl: 'players/audios/cover-track3',
       audioExt: 'wav',
       subtitle: 'Cover by ERNESS – (Original de Malú)',
       cardLabel: 'Diamond Content – Web Exclusive',
@@ -199,7 +199,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
       artist: 'Erness',
       originalArtist: '',
       fileBase: 'placeholder-cover',
-      audioUrl: '/players/audios/placeholder-cover',
+      audioUrl: 'players/audios/placeholder-cover',
       audioExt: 'wav',
       subtitle: 'Cover by ERNESS – (Original por definir)',
       cardLabel: 'Diamond Content – Web Exclusive',
@@ -215,7 +215,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
       artist: 'MerMusic Beats',
       album: 'Neon Circuit',
       fileBase: 'tusojosmegritan',
-      audioUrl: '/players/audios/No_es_que_lo_diga_yo_2025',
+      audioUrl: 'players/audios/No_es_que_lo_diga_yo_2025',
       subtitle: 'MerMusic Beats & Originals by Erness',
       cardLabel: 'Diamond Content – Web Exclusive',
       platforms: ['Originals by Erness'],
@@ -228,7 +228,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
       artist: 'MerMusic Beats',
       album: 'Neon Circuit',
       fileBase: 'quemeestascontando',
-      audioUrl: '/players/audios/Que_me_estas_contando_2025',
+      audioUrl: 'players/audios/Que_me_estas_contando_2025',
       subtitle: 'MerMusic Beats & Originals by Erness',
       cardLabel: 'Diamond Content – Web Exclusive',
       platforms: ['Originals by Erness'],
@@ -241,7 +241,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
       artist: 'MerMusic Beats',
       album: 'Neon Circuit',
       fileBase: 'noesquelodigayo',
-      audioUrl: '/players/audios/tus_ojos_me_gritan_2025',
+      audioUrl: 'players/audios/tus_ojos_me_gritan_2025',
       subtitle: 'MerMusic Beats & Originals by Erness',
       cardLabel: 'Diamond Content – Web Exclusive',
       platforms: ['Originals by Erness'],
@@ -254,7 +254,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
       artist: 'MerMusic Beats',
       album: '',
       fileBase: 'placeholder-mbeats',
-      audioUrl: '/players/audios/placeholder-mbeats',
+      audioUrl: 'players/audios/placeholder-mbeats',
       subtitle: 'MerMusic Beats & Originals by Erness',
       cardLabel: 'Diamond Content – Web Exclusive',
       platforms: ['Originals by Erness'],
@@ -492,10 +492,10 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
   const TrackImage = ({ fileBase, alt }) => {
     const [idx, setIdx] = useState(0);
     const sources = [
-      `/players/image/${fileBase}.png`,
-      `/players/image/${fileBase}.webp`,
-      `/players/images/${fileBase}.png`,
-      `/players/images/${fileBase}.webp`,
+      `players/image/${fileBase}.png`,
+      `players/image/${fileBase}.webp`,
+      `players/images/${fileBase}.png`,
+      `players/images/${fileBase}.webp`,
     ];
     const src = sources[idx];
     return (
@@ -508,14 +508,13 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
     );
   };
 
-  // Album image loader from public folder with multiple fallbacks
   const AlbumImage = ({ fileBase, alt }) => {
     const [idx, setIdx] = useState(0);
     const sources = [
-      `/${fileBase}.png`,
-      `/${fileBase}.jpg`,
-      `/${fileBase}.jpeg`,
-      `/${fileBase}.webp`,
+      `${fileBase}.png`,
+      `${fileBase}.jpg`,
+      `${fileBase}.jpeg`,
+      `${fileBase}.webp`,
     ];
     const src = sources[idx];
     return (
@@ -576,16 +575,16 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
             <div className="mt-2 text-xs text-gray-600">Próximamente en:</div>
             <div className="mt-1 flex items-center gap-4">
               <a href="https://open.spotify.com/artist/0ZSkMQRAxtOUca0wbAInJR?si=yd2vozqLRtyP_rzyt8aTfg" target="_blank" rel="noreferrer" aria-label="Spotify – Erness">
-                <img src="/icons/spotify.svg" alt="Spotify" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                <img src="icons/spotify.svg" alt="Spotify" className="h-5 w-auto hover:opacity-80 transition-opacity" />
               </a>
               <a href="https://music.apple.com/gb/artist/erness/1511155802" target="_blank" rel="noreferrer" aria-label="Apple Music – Erness">
-                <img src="/icons/apple-music.svg" alt="Apple Music" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                <img src="icons/apple-music.svg" alt="Apple Music" className="h-5 w-auto hover:opacity-80 transition-opacity" />
               </a>
               <a href="https://youtube.com/@ernessofficial" target="_blank" rel="noreferrer" aria-label="YouTube – @ErnessOfficial">
-                <img src="/icons/youtube.svg" alt="YouTube" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                <img src="icons/youtube.svg" alt="YouTube" className="h-5 w-auto hover:opacity-80 transition-opacity" />
               </a>
               <a href="https://on.soundcloud.com/WAPyquNhRPxdmTxE7" target="_blank" rel="noreferrer" aria-label="SoundCloud – Erness">
-                <img src="/icons/soundcloud.svg" alt="SoundCloud" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                <img src="icons/soundcloud.svg" alt="SoundCloud" className="h-5 w-auto hover:opacity-80 transition-opacity" />
               </a>
             </div>
           </div>
@@ -602,16 +601,16 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
             <div className="mt-2 text-xs text-gray-600">Disponible próximamente:</div>
             <div className="mt-1 flex items-center gap-4">
               <a href="https://open.spotify.com/artist/0ZSkMQRAxtOUca0wbAInJR?si=yd2vozqLRtyP_rzyt8aTfg" target="_blank" rel="noreferrer" aria-label="Spotify – Erness">
-                <img src="/icons/spotify.svg" alt="Spotify" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                <img src="icons/spotify.svg" alt="Spotify" className="h-5 w-auto hover:opacity-80 transition-opacity" />
               </a>
               <a href="https://music.apple.com/gb/artist/erness/1511155802" target="_blank" rel="noreferrer" aria-label="Apple Music – Erness">
-                <img src="/icons/apple-music.svg" alt="Apple Music" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                <img src="icons/apple-music.svg" alt="Apple Music" className="h-5 w-auto hover:opacity-80 transition-opacity" />
               </a>
               <a href="https://youtube.com/@ernessofficial" target="_blank" rel="noreferrer" aria-label="YouTube – @ErnessOfficial">
-                <img src="/icons/youtube.svg" alt="YouTube" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                <img src="icons/youtube.svg" alt="YouTube" className="h-5 w-auto hover:opacity-80 transition-opacity" />
               </a>
               <a href="https://on.soundcloud.com/WAPyquNhRPxdmTxE7" target="_blank" rel="noreferrer" aria-label="SoundCloud – Erness">
-                <img src="/icons/soundcloud.svg" alt="SoundCloud" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                <img src="icons/soundcloud.svg" alt="SoundCloud" className="h-5 w-auto hover:opacity-80 transition-opacity" />
               </a>
             </div>
           </div>
@@ -742,7 +741,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
             onClick={() => setActiveSection('home')}
           >
             <img
-              src="/mermusic-icon.png"
+              src="mermusic-icon.png"
               alt="MerMusic Icon"
               className="w-10 h-10 rounded-full object-cover"
             />
@@ -819,7 +818,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
   const HeroSection = () => (
     <section
       className="relative h-screen flex items-end justify-center text-center text-white bg-no-repeat bg-contain bg-center"
-      style={{ backgroundImage: 'url(/bannermermusicwebpng.png)' }}
+      style={{ backgroundImage: 'url(bannermermusicwebpng.png)' }}
     >
       <div className="relative z-10 mb-8">
         <div className="inline-flex items-center justify-center p-4 md:p-5 rounded-full bg-white/90 shadow-2xl ring-2 ring-[#0c2647]/50 backdrop-blur-sm">
@@ -839,7 +838,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
         <div>
           <div className="flex items-center space-x-2 mb-4">
-            <img src="/avatarweb.png" alt="Avatar" className="w-10 h-10 rounded-full object-cover" />
+            <img src="avatarweb.png" alt="Avatar" className="w-10 h-10 rounded-full object-cover" />
             <span className="font-bold text-xl text-white">Ernesto Mendoza M - Erness</span>
           </div>
           <p className="text-sm leading-relaxed">
@@ -1115,7 +1114,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
           <section className="py-16 bg-white dark:bg-gray-900">
             <div className="max-w-6xl mx-auto px-4 text-center mb-12">
               <div className="w-full mb-4">
-                <img src="/originalsbanner.png" alt="Originals banner" className="w-full h-auto max-h-[420px] object-contain rounded-xl shadow" />
+                <img src="originalsbanner.png" alt="Originals banner" className="w-full h-auto max-h-[420px] object-contain rounded-xl shadow" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-2">
                 Originals by Erness
@@ -1133,16 +1132,16 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
                   Pre‑lanzamiento exclusivo <span className="inline-flex items-center gap-2"><Gem size={18} className="text-gray-800" /></span> – Próximamente en las plataformas musicales
                   <span className="inline-flex items-center gap-4 ml-3 align-middle">
                     <a href="https://music.apple.com/gb/artist/erness/1511155802" target="_blank" rel="noreferrer" aria-label="Apple Music – Erness">
-                      <img src="/icons/apple-music.svg" alt="Apple Music" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                      <img src="icons/apple-music.svg" alt="Apple Music" className="h-5 w-auto hover:opacity-80 transition-opacity" />
                     </a>
                     <a href="https://youtube.com/@ernessofficial" target="_blank" rel="noreferrer" aria-label="YouTube – @ErnessOfficial">
-                      <img src="/icons/youtube.svg" alt="YouTube" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                      <img src="icons/youtube.svg" alt="YouTube" className="h-5 w-auto hover:opacity-80 transition-opacity" />
                     </a>
                     <a href="https://open.spotify.com/artist/0ZSkMQRAxtOUca0wbAInJR?si=yd2vozqLRtyP_rzyt8aTfg" target="_blank" rel="noreferrer" aria-label="Spotify – Erness">
-                      <img src="/icons/spotify.svg" alt="Spotify" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                      <img src="icons/spotify.svg" alt="Spotify" className="h-5 w-auto hover:opacity-80 transition-opacity" />
                     </a>
                     <a href="https://on.soundcloud.com/WAPyquNhRPxdmTxE7" target="_blank" rel="noreferrer" aria-label="SoundCloud – Erness">
-                      <img src="/icons/soundcloud.svg" alt="SoundCloud" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                      <img src="icons/soundcloud.svg" alt="SoundCloud" className="h-5 w-auto hover:opacity-80 transition-opacity" />
                     </a>
                   </span>
                 </div>
@@ -1167,7 +1166,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
           <section className="py-16 bg-gray-50 dark:bg-gray-800">
             <div className="max-w-6xl mx-auto px-4 text-center mb-12">
               <div className="w-full mb-4">
-                <img src="/coversbanner.png" alt="Covers banner" className="w-full h-auto max-h-[420px] object-contain rounded-xl shadow" />
+                <img src="coversbanner.png" alt="Covers banner" className="w-full h-auto max-h-[420px] object-contain rounded-xl shadow" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-2">
                 Covers by Erness
@@ -1238,7 +1237,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
           <section className="py-16 bg-white dark:bg-gray-900">
             <div className="max-w-6xl mx-auto px-4 text-center mb-12">
               <div className="w-full mb-4">
-                <img src="/mmbeats-banner.png" alt="M-beats banner" className="w-full h-auto max-h-[420px] object-contain rounded-xl shadow" />
+                <img src="mmbeats-banner.png" alt="M-beats banner" className="w-full h-auto max-h-[420px] object-contain rounded-xl shadow" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-2">
                 M-beats
@@ -1261,16 +1260,16 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
                   Pre‑lanzamiento exclusivo <span className="inline-flex items-center gap-2"><Gem size={18} className="text-gray-800" /></span> – Próximamente en las plataformas musicales
                   <span className="inline-flex items-center gap-4 ml-3 align-middle">
                     <a href="https://music.apple.com/gb/artist/erness/1511155802" target="_blank" rel="noreferrer" aria-label="Apple Music – Erness">
-                      <img src="/icons/apple-music.svg" alt="Apple Music" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                      <img src="icons/apple-music.svg" alt="Apple Music" className="h-5 w-auto hover:opacity-80 transition-opacity" />
                     </a>
                     <a href="https://youtube.com/@ernessofficial" target="_blank" rel="noreferrer" aria-label="YouTube – @ErnessOfficial">
-                      <img src="/icons/youtube.svg" alt="YouTube" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                      <img src="icons/youtube.svg" alt="YouTube" className="h-5 w-auto hover:opacity-80 transition-opacity" />
                     </a>
                     <a href="https://open.spotify.com/artist/0ZSkMQRAxtOUca0wbAInJR?si=yd2vozqLRtyP_rzyt8aTfg" target="_blank" rel="noreferrer" aria-label="Spotify – Erness">
-                      <img src="/icons/spotify.svg" alt="Spotify" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                      <img src="icons/spotify.svg" alt="Spotify" className="h-5 w-auto hover:opacity-80 transition-opacity" />
                     </a>
                     <a href="https://on.soundcloud.com/WAPyquNhRPxdmTxE7" target="_blank" rel="noreferrer" aria-label="SoundCloud – Erness">
-                      <img src="/icons/soundcloud.svg" alt="SoundCloud" className="h-5 w-auto hover:opacity-80 transition-opacity" />
+                      <img src="icons/soundcloud.svg" alt="SoundCloud" className="h-5 w-auto hover:opacity-80 transition-opacity" />
                     </a>
                   </span>
                 </div>
@@ -1289,7 +1288,7 @@ const IconImg = ({ name, alt = '', size = 20, className = '', fallback = null })
           <section className="py-16 bg-gray-50 dark:bg-gray-800">
             <div className="max-w-6xl mx-auto px-4 text-center mb-12">
               <div className="w-full mb-4">
-                <img src="/videosweb-banner.png" alt="Videos banner" className="w-full h-auto max-h-[420px] object-contain rounded-xl shadow" />
+                <img src="videosweb-banner.png" alt="Videos banner" className="w-full h-auto max-h-[420px] object-contain rounded-xl shadow" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-2">
                 Videos Musicales
